@@ -43,7 +43,7 @@ class Shop extends Component {
   
   addProductToShoppingCart = (id, cartList) => {
     const newProductList = [...this.state.productList]
-    const newCartList = []
+    const newCartList = [...this.state.cartList]
     newCartList.push(newProductList[id])
     this.setState({cartList: newCartList})
   }
